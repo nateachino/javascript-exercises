@@ -1,8 +1,5 @@
-const removeFromArray = function (...list) {
-  let newArray = list.splice(list);
-  let splicedArray = newArray.splice(list);
-
-  return newArray;
+const removeFromArray = function (array, ...args) {
+  return array.filter((element) => !args.includes(element));
 };
 
 // Do not edit below this line
